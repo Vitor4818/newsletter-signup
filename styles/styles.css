@@ -1,42 +1,82 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(234, 29%, 20%);
-    font-family: "Roboto", sans-serif;
-    width: 98vw;
-    height: 60vw;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-.main-content{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    width: 70%;
-    border-radius: 10px;
-    padding: 3%;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(235, 18%, 26%);
+  width: 98vw;
+  height: 70vw;
 }
 
-.signup-section{
-    margin: 3%;
-    width: 50%;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.signup-section h1{
-    font-size: 60px;
+.error {
+  font-weight: bold;
+  color: red;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 70%;
+  border-radius: 10px;
+  padding: 3%;
 }
 
-
-.ul-custom{
-    list-style: none; /* Remove os marcadores padrão */
-    padding: 0;
+.signup-section {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  width: 50%;
 }
-.ul-custom li{
-    padding-left: 25px; /* Espaço para a imagem */
-    background: url('../assets/images/icon-list.svg') no-repeat left center;
-    background-size: 20px 20px; /* Ajusta o tamanho da imagem */
-    margin-bottom: 1%;
+
+.signup-section input {
+  height: 3rem;
+  border-radius: 10px;
+  border-style: outset;
+  margin-top: 1%;
+  border-width: 1px;
+}
+
+.signup-section h1 {
+  font-size: 60px;
+}
+
+.ul-custom {
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0;
+}
+.ul-custom li {
+  padding-left: 25px; /* Espaço para a imagem */
+  background: url("../assets/images/icon-list.svg") no-repeat left center;
+  background-size: 20px 20px; /* Ajusta o tamanho da imagem */
+  margin-bottom: 2%;
+}
+
+.button-submit {
+  margin-top: 3%;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-size: 16px;
+  height: 3rem;
+  transition: box-shadow 0.3s ease-in-out;
+  border-style: none;
+}
+
+.button-submit:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsl(4, 100%, 67%),
+    rgb(255, 102, 0)
+  );
+  box-shadow: 0 0 15px 5px hsl(4, 100%, 67%);
+  cursor: pointer;
 }
