@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    width: 98vw;
+    height: 60vw;
+}
+
+
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.signup-section{
+    margin: 3%;
+    width: 50%;
+}
+
+.signup-section h1{
+    font-size: 60px;
+}
+
+
+.ul-custom{
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+}
+.ul-custom li{
+    padding-left: 25px; /* Espaço para a imagem */
+    background: url('../assets/images/icon-list.svg') no-repeat left center;
+    background-size: 20px 20px; /* Ajusta o tamanho da imagem */
+    margin-bottom: 1%;
+}
